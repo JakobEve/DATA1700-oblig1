@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Oslomet Kino</title>
+    <link rel="stylesheet" type="text/css" href="CSS/stylesheet.css">
+</head>
+<body>
+    <h1>Bestilling av Kinobilletter:</h1>
+
+    <div class="inputGruppe">
+        <label for="filmer">Velg film:</label>
+        <select name="filmer" id="filmer">
+            <option value="" disabled selected>Velg film her</option>
+            <option value="nemo">Nemo</option>
+            <option value="frozen">Frozen</option>
+            <option value="inception">Inception</option>
+        </select>
+    </div>
+    <div class="inputGruppe">
+        <label for="antallBilletter">Antall:</label>
+        <input type="number" id="antallBilletter" min="1">
+    </div>
+    <div class="inputGruppe">
+        <label for="fornavn">Fornavn</label>
+        <input type="text" id="fornavn">
+    </div>
+    <div class="inputGruppe">
+        <label for="etternavn">Etternavn</label>
+        <input type="text" id="etternavn">
+    </div>
+    <div class="inputGruppe">
+        <label for="telefonnr">Telefonnr</label>
+        <input type="text" id="telefonnr">
+    </div>
+    <div class="inputGruppe">
+        <label for="epost">Epost</label>
+        <input type="text" id="epost">
+    </div>
+    <button id="kjopBillett">Kjøp billett</button>
+    <h2>Alle billetter</h2>
+    <div id="alleBilletter">
+
+    </div>
+    <button id="slettBilletter">Slett alle billettene</button>
+    <script src="JavaScript/billettBestilling.js"></script>
+</body>
+</html>
